@@ -8,6 +8,6 @@ namespace Payroll_Mvc.Models
 {
     public class PayrollContext : DbContext
     {
-        //public DbSet<country>
+        public DbSet<country> Country { get; set; }
     }
 }
