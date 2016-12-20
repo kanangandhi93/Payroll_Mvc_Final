@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Payroll_Mvc.Models.country>
+
+@using Payroll_Mvc.Models;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Of Countries</h2>
+
+
+<table border="0">
+    <tr>
+        <td>Country Name</td>
+        <td></td>
+    </tr>
+
+    @foreach (country item in @Model)
+    {
+        <tr>
+
+            <td>
+                @Html.Label(item.CountryName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+

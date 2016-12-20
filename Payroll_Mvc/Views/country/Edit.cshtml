@@ -1,0 +1,21 @@
+﻿@model Payroll_Mvc.Models.country
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+
+<table>
+    <tr>
+        <td>Contry Name: </td>
+        <td>@Html.TextBox(@Model.CountryName)</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+           <input type="button" value="Update" />
+        </td>
+    </tr>
+</table>
