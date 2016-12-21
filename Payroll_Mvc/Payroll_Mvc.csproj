@@ -270,6 +270,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\country\Index.cshtml" />
     <Content Include="Views\country\Edit.cshtml" />
+    <Content Include="Views\country\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
