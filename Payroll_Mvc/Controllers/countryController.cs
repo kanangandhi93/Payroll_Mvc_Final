@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Payroll_Mvc.Models;
+using BusinessLayer;
 
 namespace Payroll_Mvc.Controllers
 {
@@ -12,9 +13,11 @@ namespace Payroll_Mvc.Controllers
         // GET: country
         public ActionResult Index()
         {
-            PayrollContext db = new PayrollContext();
-            List<country> Countries = db.Country.ToList();
-            return View(Countries);
+            //PayrollContext db = new PayrollContext();
+            CountryBusinessLayer countryBusinessLayer = new CountryBusinessLayer();
+            List<Country> countries = countryBusinessLayer.countries.ToList();
+            //List<country> Countries = db.Country.ToList();
+            return View(countries);
         }
 
         public ActionResult Edit(Int64 id)

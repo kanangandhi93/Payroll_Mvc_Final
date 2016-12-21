@@ -1,36 +1,33 @@
-﻿@model IEnumerable<Payroll_Mvc.Models.country>
-
-@using Payroll_Mvc.Models;
+﻿@model IEnumerable<BusinessLayer.Country>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>List Of Countries</h2>
+<h2>Index</h2>
 
-
-<table border="0">
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
     <tr>
-        <td>Country Name</td>
-        <td></td>
+        <th>
+            @Html.DisplayNameFor(model => model.CountryName)
+        </th>
+        <th></th>
     </tr>
 
-    @foreach (country item in @Model)
-    {
-        <tr>
-
-            <td>
-                @Html.Label(item.CountryName)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
-
-            </td>
-        </tr>
-    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
 
 </table>
-
-
-
-
