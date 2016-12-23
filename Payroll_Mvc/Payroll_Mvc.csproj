@@ -198,6 +198,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\countryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\stateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -270,6 +271,8 @@
     <Content Include="Views\country\Index.cshtml" />
     <Content Include="Views\country\Edit.cshtml" />
     <Content Include="Views\country\Delete.cshtml" />
+    <Content Include="Views\state\Create.cshtml" />
+    <Content Include="Views\state\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

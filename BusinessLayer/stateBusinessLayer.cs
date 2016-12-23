@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    class stateBusinessLayer
+   public class stateBusinessLayer
     {
         public Int64 Id;
         public IEnumerable<state> States
