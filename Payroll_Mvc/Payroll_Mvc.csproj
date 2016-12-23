@@ -273,6 +273,8 @@
     <Content Include="Views\country\Delete.cshtml" />
     <Content Include="Views\state\Create.cshtml" />
     <Content Include="Views\state\Index.cshtml" />
+    <Content Include="Views\state\Edit.cshtml" />
+    <Content Include="Views\state\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
