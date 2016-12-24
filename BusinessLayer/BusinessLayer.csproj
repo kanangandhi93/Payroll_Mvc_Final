@@ -44,6 +44,8 @@
     <Compile Include="Country.cs" />
     <Compile Include="CountryBusinessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="RoleBusinessLayer.cs" />
     <Compile Include="state.cs" />
     <Compile Include="stateBusinessLayer.cs" />
   </ItemGroup>
