@@ -40,7 +40,7 @@ namespace BusinessLayer
             }
         }
 
-        public int AddCountry(Role role)
+        public int AddRole(Role role)
         {
             SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["PayrollContext"].ConnectionString);
             SqlCommand cmd = new SqlCommand();
@@ -64,7 +64,7 @@ namespace BusinessLayer
             return rv;
         }
 
-        public int UpdateCountry(Role role)
+        public int UpdateRole(Role role)
         {
             SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["PayrollContext"].ConnectionString);
             SqlCommand cmd = new SqlCommand();
@@ -88,7 +88,7 @@ namespace BusinessLayer
             return rv;
         }
 
-        public int DeleteCountry(Role role)
+        public int DeleteRole(Role role)
         {
             SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["PayrollContext"].ConnectionString);
             SqlCommand cmd = new SqlCommand();
