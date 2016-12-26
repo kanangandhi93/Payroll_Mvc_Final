@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="City.cs" />
+    <Compile Include="CityBusinessLayer.cs" />
+    <Compile Include="CompanyDetailBusinessLayer.cs" />
+    <Compile Include="companydetails.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="CountryBusinessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
