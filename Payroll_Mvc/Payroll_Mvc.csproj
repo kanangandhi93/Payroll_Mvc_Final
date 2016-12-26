@@ -197,6 +197,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\cityController.cs" />
+    <Compile Include="Controllers\companydetailController.cs" />
     <Compile Include="Controllers\countryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\roleController.cs" />
@@ -283,9 +284,12 @@
     <Content Include="Views\role\Delete.cshtml" />
     <Content Include="Views\city\Create.cshtml" />
     <Content Include="Views\city\demo.cshtml" />
+    <Content Include="Views\companydetail\Create.cshtml" />
+    <Content Include="Views\companydetail\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Company_Logo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
