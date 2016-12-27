@@ -286,6 +286,8 @@
     <Content Include="Views\city\demo.cshtml" />
     <Content Include="Views\companydetail\Create.cshtml" />
     <Content Include="Views\companydetail\Index.cshtml" />
+    <Content Include="Views\companydetail\Edit.cshtml" />
+    <Content Include="Views\companydetail\EditLogo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

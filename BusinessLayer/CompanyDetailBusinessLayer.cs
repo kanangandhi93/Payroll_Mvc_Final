@@ -126,8 +126,31 @@ namespace BusinessLayer
             cmd.Parameters.Add(new SqlParameter("@Founder3", companydetails.Founder3));
             cmd.Parameters.Add(new SqlParameter("@Founder4", companydetails.Founder4));
             cmd.Parameters.Add(new SqlParameter("@Founder5", companydetails.Founder5));
-            cmd.Parameters.Add(new SqlParameter("@potalcode", companydetails.potalcode));
+            cmd.Parameters.Add(new SqlParameter("@PostalCode", companydetails.potalcode));
             cmd.Parameters.Add(new SqlParameter("@state", companydetails.state));
+            cmd.Parameters.Add(new SqlParameter("@Id", companydetails.Id));
+            cmd.Connection = sqlConnection1;
+
+            sqlConnection1.Open();
+
+            int rv = cmd.ExecuteNonQuery();
+
+            sqlConnection1.Close();
+            cmd.Dispose();
+            sqlConnection1.Dispose();
+
+            return rv;
+        }
+
+        public int UpdatecompanyLogo(companydetails companydetails)
+        {
+            SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["PayrollContext"].ConnectionString);
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "SP_tbl_Company";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@Mode", "UpdateLogo"));
+            cmd.Parameters.Add(new SqlParameter("@CompanyLogo", companydetails.CompanyLogo));
             cmd.Parameters.Add(new SqlParameter("@Id", companydetails.Id));
             cmd.Connection = sqlConnection1;
 
