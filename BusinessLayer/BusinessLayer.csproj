@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Branch.cs" />
+    <Compile Include="BranchBusinessLayer.cs" />
     <Compile Include="City.cs" />
     <Compile Include="CityBusinessLayer.cs" />
     <Compile Include="CompanyDetailBusinessLayer.cs" />
